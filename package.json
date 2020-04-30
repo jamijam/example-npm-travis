@@ -4,7 +4,9 @@
   "description": "Example project for setting up CoPilot with an NPM project built with Travis CI",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js test arguments"
+    "test": "node index.js test arguments",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -15,15 +17,17 @@
     "url": "https://github.com/BlackDuckCoPilot/example-npm-travis/issues"
   },
   "homepage": "https://github.com/BlackDuckCoPilot/example-npm-travis#readme",
-   "dependencies": {
-     "axios": "0.18.0",
-     "chownr": "1.0.1",
-     "eslint-utils": "1.3.1",
-     "handlebars": "4.0.12",
-     "lodash": "4.17.11",
-     "mime": "1.4.1",
-     "mixin-deep": "1.3.1",
-     "set-value": "0.4.3",
-     "tar": "4.4.1"
-  }
+  "dependencies": {
+    "axios": "0.18.0",
+    "chownr": "1.0.1",
+    "eslint-utils": "1.3.1",
+    "handlebars": "4.0.12",
+    "lodash": "4.17.11",
+    "mime": "1.4.1",
+    "mixin-deep": "1.3.1",
+    "set-value": "0.4.3",
+    "tar": "4.4.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
