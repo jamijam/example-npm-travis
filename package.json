@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/BlackDuckCoPilot/example-npm-travis#readme",
    "dependencies": {
-     "gulp": "^4.0.2"
+     "yargs": "7.1.0"
   }
 }
